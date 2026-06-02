@@ -9,8 +9,8 @@ import {
 
 export default function NavigationMenu() {
   return (
-    <NavigationMenuRoot className={"w-full flex justify-center"}>
-      <NavigationMenuList className={"flex items-center justify-center gap-3 p-3"}>
+    <NavigationMenuRoot >
+      <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Explore</NavigationMenuTrigger>
           <NavigationMenuContent>

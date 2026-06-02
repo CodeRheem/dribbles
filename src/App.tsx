@@ -1,19 +1,21 @@
 import { ButtonComponent } from "./components/button"
-import  NavigationMenu  from "./components/navmenu"
+import NavigationMenu from "./components/navmenu"
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <NavigationMenu />
+    <>
+      <div className="mx-auto min-h-screen items-center justify-center p-4">
+        <div className="flex max-w-full flex-col gap-4 text-sm">
+          <div className="flex flex-row items-center justify-center gap-4">
+            <NavigationMenu />
+          </div>
           <ButtonComponent />
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
+          <div className="font-mono text-xs text-muted-foreground">
+            (Press <kbd>d</kbd> to toggle dark mode)
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
