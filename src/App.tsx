@@ -1,5 +1,6 @@
 import { ButtonComponent } from "./components/button"
 import NavigationMenu from "./components/navmenu"
+import { Input } from "@/components/ui/input"
 
 export function App() {
   return (
@@ -7,7 +8,10 @@ export function App() {
       <div className="mx-auto min-h-screen items-center justify-center p-4">
           <div className="p-5">
             <h1 className="text-2xl text-light pacifico-regular">Dribbles</h1>
-            <div className="flex flex-row items-center justify-center gap-4 -mt-8">
+            <div className='w-[30%] -mt-10 ml-32'>
+              <Input placeholder="What are you looking for?" />
+            </div>
+            <div className="flex flex-row items-center justify-center gap-4 -mt-10">
               <NavigationMenu />
             </div>
           </div>
