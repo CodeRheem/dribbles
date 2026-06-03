@@ -1,6 +1,6 @@
-import { ButtonComponent } from "./components/button"
 import NavigationMenu from "./components/navmenu"
 import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 
 export function App() {
   return (
@@ -14,14 +14,19 @@ export function App() {
           <Input placeholder="What are you looking for?" />
         </div>
 
-        <nav >
+        <nav className="pl-4">
           <NavigationMenu />
         </nav>
+
+        <div className="absolute right-15 flex items-center gap-2">
+          <Button variant="outline" className="border rounded-4xl p-6">Sign up</Button>
+          <Button  className="border rounded-4xl p-6">Log in</Button>
+        </div>
       </header>
 
       {/* Page content */}
       <main className="flex flex-col items-center justify-center gap-4 p-4">
-        <ButtonComponent />
+        <Button>Get started</Button>
         <p className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </p>
