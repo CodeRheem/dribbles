@@ -26,7 +26,11 @@ export function App() {
 
       {/* Page content */}
       <main className="flex flex-col items-center justify-center gap-4 p-4">
-        <Button>Get started</Button>
+        <div>
+          <div>
+            <h2>Smart Home Landing Page Design</h2>
+          </div>
+        </div>
         <p className="font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </p>
