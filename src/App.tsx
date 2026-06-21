@@ -1,13 +1,13 @@
+import { Button } from "@base-ui/react"
 import NavigationMenu from "./components/navmenu"
 
 
 export function App() {
   return (
     <div 
-      className="mx-auto min-h-screen p-4 bg-cover bg-center rounded-sm border-10 border-white"
-      style={{ backgroundImage: "url('/oscar-nord--U4GwXGP5ew-unsplash.jpg')" }}
+      className="mx-auto min-h-screen p-4 bg-cover bg-center"
+      style={{ backgroundImage: "url('public/oscar-nord--U4GwXGP5ew-unsplash.jpg')", height: '100%', width: '100%' }}
     >
-
       {/* Navbar */}
       <header className="relative z-10 flex justify-center items-center px-5 py-4 text-white dark:text-white">
         <div className="absolute left-35">
@@ -24,10 +24,22 @@ export function App() {
       </header>
 
       {/* Page content */}
-      <main className="relative z-0 flex flex-col items-center justify-center text-white">
-        <h1 className="text-4xl font-bold mb-4">Elevate Your Living Experience</h1>
-        <p className="text-lg">This is a sample page content.</p>
+      <main className="absolute right-10 top-1/2 transform -translate-y-1/2 font-[Outfit]">
+        <div>
+          <h1 className="text-4xl mb-4 text-white">Elevate Your Living Experience</h1>
+          <p className="text-lg text-white">Discover the latest smart devices designed to simplify your life,<br/>and optimize energy efficiency.</p>
+          <Button className="flex items-center gap-2 border mt-8 p-3 bg-white rounded-4xl text-black border-white hover:bg-dark hover:text-black">Get Started
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="border rounded-2xl bg-black text-white lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg> 
+          </Button>
+          <div className="flex items-center gap-4 mt-15">
+            <Button>Smart</Button>
+            <Button>Safe</Button>
+            <Button>Secure</Button>
+            <Button>Comfort</Button>
+          </div>
+        </div>
       </main>   
+
     </div>
   )
 }
