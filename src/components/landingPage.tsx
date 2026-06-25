@@ -5,7 +5,7 @@ import NavigationMenu from "./navmenu"
 export default function LandingPage() {
   return (
     <div 
-      className="relative mx-auto min-h-screen p-4 bg-cover bg-center border border-white rounded-3xl"
+      className="relative mx-auto min-h-screen p-4 bg-cover bg-center border border-black rounded-3xl shadow-[0_8px_15px_-3px_rgba(0,0,0,0.4)]"
       style={{ backgroundImage: "url('public/oscar-nord--U4GwXGP5ew-unsplash.jpg')", height: '100%', width: '100%',  }}
     >
       {/* Navbar */}
