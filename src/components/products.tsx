@@ -28,7 +28,7 @@ export default function Products() {
 
   return (
     <>
-      <div className="relative mx-auto mt-26 min-h-160 rounded-3xl border border-black bg-white bg-cover bg-center p-4 shadow-[0_8px_15px_-3px_rgba(0,0,0,0.4)]">
+      <div className="relative mx-auto mt-26 min-h-160 rounded-3xl border border-black bg-black bg-cover bg-center p-4 shadow-[0_8px_15px_-3px_rgba(0,0,0,0.4)]">
         <div>
           <h1 className="absolute top-1/6 left-[18em] font-[Outfit] text-3xl text-gray-500">
             Discover Our Smart{" "}
